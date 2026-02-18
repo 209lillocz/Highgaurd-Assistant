@@ -19,11 +19,22 @@ class HighguardApp extends StatelessWidget {
     return ChangeNotifierProvider(
       create: (_) => WeaponProvider()..loadFromAssets(),
       child: Consumer<WeaponProvider>(builder: (context, prov, _) {
+        final seed = const Color(0xFF283593); // deep indigo
+        final light = ThemeData(useMaterial3: true, colorSchemeSeed: seed, brightness: Brightness.light);
+        final dark = ThemeData(
+          useMaterial3: true,
+          brightness: Brightness.dark,
+          colorSchemeSeed: seed,
+          scaffoldBackgroundColor: const Color(0xFF0B1020),
+          cardColor: const Color(0xFF0F1724),
+          appBarTheme: const AppBarTheme(backgroundColor: Colors.transparent, elevation: 0),
+        );
+
         return MaterialApp(
           title: 'Highguard Assistant',
-          theme: ThemeData(useMaterial3: true, colorSchemeSeed: Colors.indigo),
-          darkTheme: ThemeData(brightness: Brightness.dark, useMaterial3: true, colorSchemeSeed: Colors.indigo),
-          themeMode: ThemeMode.system,
+          theme: light,
+          darkTheme: dark,
+          themeMode: prov.themeMode,
           home: const RootScreen(),
         );
       }),

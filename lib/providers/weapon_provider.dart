@@ -13,6 +13,8 @@ class WeaponProvider extends ChangeNotifier {
   Weapon? selected;
   String selectedRarity = 'Blue';
 
+  ThemeMode themeMode = ThemeMode.dark;
+
   final List<String> rarities = ['Blue', 'Purple', 'Gold', 'Red'];
 
   Set<String> favorites = {};
@@ -27,6 +29,16 @@ class WeaponProvider extends ChangeNotifier {
     weapons = (j['weapons'] as List<dynamic>? ?? []).map((e) => Weapon.fromJson(e as Map<String, dynamic>)).toList();
     if (weapons.isNotEmpty) selected = weapons.first;
     await _loadFavorites();
+    notifyListeners();
+  }
+
+  Map<String, dynamic> getRarityMultiplier(String r) {
+    if (r == 'Blue') return {'damage': 1.0, 'clip': 1.0, 'reload': 1.0};
+    return (rarityMultipliers[r] as Map<String, dynamic>?) ?? {'damage': 1.0, 'clip': 1.0, 'reload': 1.0};
+  }
+
+  void toggleTheme() {
+    themeMode = themeMode == ThemeMode.dark ? ThemeMode.light : ThemeMode.dark;
     notifyListeners();
   }
 

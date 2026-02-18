@@ -3,8 +3,10 @@ class Weapon {
   final String type;
   final BaseStats base;
   final Map<String, List<String>> perksByRarity;
+  final String? imageUrl;
+  final String? description;
 
-  Weapon({required this.name, required this.type, required this.base, required this.perksByRarity});
+  Weapon({required this.name, required this.type, required this.base, required this.perksByRarity, this.imageUrl, this.description});
 
   factory Weapon.fromJson(Map<String, dynamic> j) {
     return Weapon(
@@ -12,6 +14,8 @@ class Weapon {
       type: j['type'] ?? '',
       base: BaseStats.fromJson(j['base'] ?? {}),
       perksByRarity: (j['perksByRarity'] as Map<String, dynamic>?)?.map((k, v) => MapEntry(k, List<String>.from(v ?? []))) ?? {},
+      imageUrl: j['imageUrl'] as String?,
+      description: j['description'] as String?,
     );
   }
 }

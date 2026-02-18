@@ -3,62 +3,82 @@
     {
       "name": "Ranger",
       "type": "Sniper",
-      "base": {"clipSize": 4, "projectilesPerShot": 1, "bodyDamage": 85, "headDamage": 148, "reloadTime": 3.2, "fireRate": 1.0},
-      "perksByRarity": {"Red": ["Faster bolt cycle", "Extended range"]}
+      "imageUrl": "assets/images/ranger.svg",
+      "base": {"clipSize": 4, "projectilesPerShot": 1, "bodyDamage": 85, "headDamage": 148, "reloadTime": 3.2, "fireRate": 2.0},
+      "perksByRarity": {"Red": ["Faster bolt cycle", "Extended range"]},
+      "description": "High-damage sniper. High single-shot lethality."
     },
     {
       "name": "Kraken",
       "type": "Shotgun",
-      "base": {"clipSize": 6, "projectilesPerShot": 8, "bodyDamage": 12, "headDamage": 18, "reloadTime": 2.6, "fireRate": 1.2},
-      "perksByRarity": {"Red": ["Drum Magazine", "Scatter Boost"]}
+      "imageUrl": "assets/images/kraken.svg",
+      "base": {"clipSize": 4, "projectilesPerShot": 10, "bodyDamage": 10, "headDamage": 15, "reloadTime": 3.0, "fireRate": 1.6},
+      "perksByRarity": {"Red": ["Drum Magazine", "Scatter Boost"]},
+      "description": "Close-range scatter shotgun with many pellets per shot. DPS varies with range."
     },
     {
       "name": "Paladin",
       "type": "Shotgun",
-      "base": {"clipSize": 8, "projectilesPerShot": 7, "bodyDamage": 11, "headDamage": 17, "reloadTime": 2.8, "fireRate": 1.1},
-      "perksByRarity": {"Red": ["Drum Magazine (40 clip)", "Basebreaker"]}
+      "imageUrl": "assets/images/paladin.svg",
+      "base": {"clipSize": 14, "projectilesPerShot": 5, "bodyDamage": 7, "headDamage": 10, "reloadTime": 1.7, "fireRate": 6.4},
+      "perksByRarity": {"Red": ["Drum Magazine (40 clip)", "Basebreaker"]},
+      "description": "Fast-firing shotgun with medium-range potential."
     },
     {
       "name": "Corsair",
       "type": "SMG",
-      "base": {"clipSize": 25, "projectilesPerShot": 1, "bodyDamage": 12, "headDamage": 18, "reloadTime": 2.0, "fireRate": 10.0},
-      "perksByRarity": {"Red": ["Reduced recoil", "High RoF"]}
+      "imageUrl": "assets/images/corsair.svg",
+      "base": {"clipSize": 24, "projectilesPerShot": 6, "bodyDamage": 12, "headDamage": 18, "reloadTime": 2.2, "fireRate": 15.0},
+      "perksByRarity": {"Red": ["Reduced recoil", "High RoF"]},
+      "description": "High rate of fire SMG effective at close range."
     },
     {
       "name": "Viper",
       "type": "SMG",
-      "base": {"clipSize": 30, "projectilesPerShot": 1, "bodyDamage": 10, "headDamage": 15, "reloadTime": 1.9, "fireRate": 11.0},
-      "perksByRarity": {"Red": ["Toxic Rounds", "Faster reload"]}
+      "imageUrl": "assets/images/viper.svg",
+      "base": {"clipSize": 26, "projectilesPerShot": 1, "bodyDamage": 10, "headDamage": 15, "reloadTime": 1.7, "fireRate": 16.3},
+      "perksByRarity": {"Red": ["Toxic Rounds", "Faster reload"]},
+      "description": "Fast SMG with strong mobility synergy."
     },
     {
       "name": "Dynasty",
       "type": "Assault Rifle",
-      "base": {"clipSize": 30, "projectilesPerShot": 1, "bodyDamage": 18, "headDamage": 27, "reloadTime": 2.4, "fireRate": 6.5},
-      "perksByRarity": {"Red": ["Impact Rounds", "Basebreaker"]}
+      "imageUrl": "assets/images/dynasty.svg",
+      "base": {"clipSize": 22, "projectilesPerShot": 1, "bodyDamage": 14, "headDamage": 24, "reloadTime": 2.2, "fireRate": 10.0},
+      "perksByRarity": {"Red": ["Impact Rounds", "Basebreaker"]},
+      "description": "Balanced AR with solid medium-range performance."
     },
     {
       "name": "Vanguard",
       "type": "Assault Rifle",
-      "base": {"clipSize": 28, "projectilesPerShot": 1, "bodyDamage": 19, "headDamage": 29, "reloadTime": 2.5, "fireRate": 6.0},
-      "perksByRarity": {"Red": ["Balanced Barrel", "Stability Boost"]}
+      "imageUrl": "assets/images/vanguard.svg",
+      "base": {"clipSize": 36, "projectilesPerShot": 1, "bodyDamage": 9, "headDamage": 14, "reloadTime": 2.0, "fireRate": 13.3},
+      "perksByRarity": {"Red": ["Balanced Barrel", "Stability Boost"]},
+      "description": "High-capacity AR favoring sustained fire."
     },
     {
       "name": "Saber Rifle",
       "type": "Assault Rifle",
-      "base": {"clipSize": 24, "projectilesPerShot": 1, "bodyDamage": 21, "headDamage": 32, "reloadTime": 2.6, "fireRate": 5.8},
-      "perksByRarity": {"Red": ["Precision Stock", "Burst Mode"]}
+      "imageUrl": "assets/images/saber_rifle.svg",
+      "base": {"clipSize": 21, "projectilesPerShot": 1, "bodyDamage": 18, "headDamage": 27, "reloadTime": 2.0, "fireRate": 7.2},
+      "perksByRarity": {"Red": ["Precision Stock", "Burst Mode"]},
+      "description": "High-precision rifle with strong single-target damage."
     },
     {
       "name": "Longhorn",
       "type": "Revolver",
-      "base": {"clipSize": 6, "projectilesPerShot": 1, "bodyDamage": 55, "headDamage": 90, "reloadTime": 2.2, "fireRate": 1.5},
-      "perksByRarity": {"Red": ["Repeater (full-auto)", "Double Shot"]}
+      "imageUrl": "assets/images/longhorn.svg",
+      "base": {"clipSize": 5, "projectilesPerShot": 1, "bodyDamage": 65, "headDamage": 97, "reloadTime": 2.4, "fireRate": 1.4},
+      "perksByRarity": {"Red": ["Repeater (full-auto)", "Double Shot"]},
+      "description": "Heavy-hitting sidearm with powerful rounds."
     },
     {
       "name": "Big Rig",
       "type": "Gatling Gun",
-      "base": {"clipSize": 200, "projectilesPerShot": 1, "bodyDamage": 6, "headDamage": 9, "reloadTime": 6.0, "fireRate": 20.0},
-      "perksByRarity": {"Red": ["Overdrive", "Cooling System"]}
+      "imageUrl": "assets/images/big_rig.svg",
+      "base": {"clipSize": 60, "projectilesPerShot": 1, "bodyDamage": 30, "headDamage": 37, "reloadTime": 4.0, "fireRate": 6.7},
+      "perksByRarity": {"Red": ["Overdrive", "Cooling System"]},
+      "description": "High-sustain heavy weapon for suppression and sustained DPS."
     }
   ],
   "rarityMultipliers": {
