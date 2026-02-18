@@ -1,0 +1,70 @@
+{
+  "weapons": [
+    {
+      "name": "Ranger",
+      "type": "Sniper",
+      "base": {"clipSize": 4, "projectilesPerShot": 1, "bodyDamage": 85, "headDamage": 148, "reloadTime": 3.2, "fireRate": 1.0},
+      "perksByRarity": {"Red": ["Faster bolt cycle", "Extended range"]}
+    },
+    {
+      "name": "Kraken",
+      "type": "Shotgun",
+      "base": {"clipSize": 6, "projectilesPerShot": 8, "bodyDamage": 12, "headDamage": 18, "reloadTime": 2.6, "fireRate": 1.2},
+      "perksByRarity": {"Red": ["Drum Magazine", "Scatter Boost"]}
+    },
+    {
+      "name": "Paladin",
+      "type": "Shotgun",
+      "base": {"clipSize": 8, "projectilesPerShot": 7, "bodyDamage": 11, "headDamage": 17, "reloadTime": 2.8, "fireRate": 1.1},
+      "perksByRarity": {"Red": ["Drum Magazine (40 clip)", "Basebreaker"]}
+    },
+    {
+      "name": "Corsair",
+      "type": "SMG",
+      "base": {"clipSize": 25, "projectilesPerShot": 1, "bodyDamage": 12, "headDamage": 18, "reloadTime": 2.0, "fireRate": 10.0},
+      "perksByRarity": {"Red": ["Reduced recoil", "High RoF"]}
+    },
+    {
+      "name": "Viper",
+      "type": "SMG",
+      "base": {"clipSize": 30, "projectilesPerShot": 1, "bodyDamage": 10, "headDamage": 15, "reloadTime": 1.9, "fireRate": 11.0},
+      "perksByRarity": {"Red": ["Toxic Rounds", "Faster reload"]}
+    },
+    {
+      "name": "Dynasty",
+      "type": "Assault Rifle",
+      "base": {"clipSize": 30, "projectilesPerShot": 1, "bodyDamage": 18, "headDamage": 27, "reloadTime": 2.4, "fireRate": 6.5},
+      "perksByRarity": {"Red": ["Impact Rounds", "Basebreaker"]}
+    },
+    {
+      "name": "Vanguard",
+      "type": "Assault Rifle",
+      "base": {"clipSize": 28, "projectilesPerShot": 1, "bodyDamage": 19, "headDamage": 29, "reloadTime": 2.5, "fireRate": 6.0},
+      "perksByRarity": {"Red": ["Balanced Barrel", "Stability Boost"]}
+    },
+    {
+      "name": "Saber Rifle",
+      "type": "Assault Rifle",
+      "base": {"clipSize": 24, "projectilesPerShot": 1, "bodyDamage": 21, "headDamage": 32, "reloadTime": 2.6, "fireRate": 5.8},
+      "perksByRarity": {"Red": ["Precision Stock", "Burst Mode"]}
+    },
+    {
+      "name": "Longhorn",
+      "type": "Revolver",
+      "base": {"clipSize": 6, "projectilesPerShot": 1, "bodyDamage": 55, "headDamage": 90, "reloadTime": 2.2, "fireRate": 1.5},
+      "perksByRarity": {"Red": ["Repeater (full-auto)", "Double Shot"]}
+    },
+    {
+      "name": "Big Rig",
+      "type": "Gatling Gun",
+      "base": {"clipSize": 200, "projectilesPerShot": 1, "bodyDamage": 6, "headDamage": 9, "reloadTime": 6.0, "fireRate": 20.0},
+      "perksByRarity": {"Red": ["Overdrive", "Cooling System"]}
+    }
+  ],
+  "rarityMultipliers": {
+    "Purple": {"damage": 1.15, "clip": 1.10, "reload": 0.90},
+    "Gold": {"damage": 1.30, "clip": 1.20, "reload": 0.80},
+    "Red": {"damage": 1.50, "clip": 1.30, "reload": 0.70}
+  },
+  "lastUpdated": "2026-02"
+}
